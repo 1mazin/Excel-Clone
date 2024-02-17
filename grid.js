@@ -29,6 +29,10 @@ for(let i=0;i<rows;i++){
         let cell=document.createElement("div");
         cell.setAttribute("class","cell");
         cell.setAttribute("contenteditable","true");
+       //For cell row col identifiaction
+        cell.setAttribute("rid",i);
+        cell.setAttribute("cid",j);
+        cell.setAttribute("spellcheck",false);
         rowCont.appendChild(cell);
         addListenerForAddressDisplay(cell,i,j);
 
@@ -42,3 +46,7 @@ function addListenerForAddressDisplay(cell,i,j){
         addressBar.value=`${colID}${rowID}`
     })
 }
+
+//bydefault click on first cell
+let firstCell=document.querySelector(".cell")
+firstCell.click();
