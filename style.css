@@ -138,7 +138,7 @@ body{
     height: 2rem;
     width: 2rem;
     background-color: #747d8c;
-    position: absolute;
+    position: fixed;
     z-index: 4;
 
 }
