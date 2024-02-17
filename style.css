@@ -28,14 +28,23 @@ body{
     justify-content: center;
     align-items: center;
 }
-.cellprop-actions-cont {
-    height: 3rem;
-    background-color: #ecf0f1;
+.cellprops-action-cont {
+ height: 3rem;
+ background-color: #ecf0f1;
+
+}
+.cellprops-action-cont>*{
+    cursor: pointer;
+}
+.cellprops-action-cont>*{
+    display: inline-block;
+    margin: 0.5rem;
     display: flex;
     align-items: center;
     padding-left: 1rem;
+ 
 }
-.cellprop-actions-cont > * {
+.cellprops-action-cont>*{
     display: inline-block;
     margin-right: 1rem;
 }
